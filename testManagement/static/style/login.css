@@ -1,0 +1,23 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+.teacherView,
+.studentView {
+    width: 50%;
+    margin: auto;
+    margin-top: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.teacherView li a,
+.teacherView a,
+.studentView li a,
+.studentView a{
+    text-decoration: none;
+    color: black;
+}

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="/static/img/logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="/static/style/base.css">
+    {% block pageCss %} {% endblock pageCss %}
+    {% block js %}{% endblock js %}
+    <title>{% block title %}{% endblock title %}| Test Management System</title>
+</head>
+
+<body>
+    <nav id="navbar">
+        <div id="logo">
+            <img src="/static/img/logo.png" alt="logo">
+            <h3>TMS</h3>
+        </div>
+        <div id="navigation-menu">
+            <ul>
+                <li><a href="/">Home</a></li>
+                <li><a href="/">Services</a></li>
+                <li><a href="/">About Us</a></li>
+                <li><a href="/">Contact Us</a></li>
+            </ul>
+        </div>
+    </nav>
+    {% block body %}
+    {% endblock body %}
+    <footer id="foot">
+        <h3>Copyright © 2023 ,TMS , All Rights Reserved.</h3>
+    </footer>
+</body>
+
+</html>

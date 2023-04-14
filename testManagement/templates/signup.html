@@ -1,0 +1,15 @@
+{% extends "base.html" %}
+{% block pageCss %}
+<link rel="stylesheet" href="/static/style/signup.css">{% endblock pageCss %}
+
+{% block title %} Sign Up {% endblock title %}
+{% block body %}
+<section class="signup">
+    <h1>Sign Up</h1>
+    <div class="account-type">
+        <button type="submit"><a href="signup/student">As Student</a></button>
+        <button type="submit"><a href="signup/teacher">As Teacher</a></button>
+    </div>
+
+</section>
+{% endblock body %}

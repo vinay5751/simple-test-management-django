@@ -1,0 +1,47 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+.signup {
+    width: 70%;
+    height: 300px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 60px;
+}
+
+.signup h1 {
+    padding: 10px;
+}
+
+.signup .account-type button {
+    padding: 8px;
+    border-radius: 20px;
+    margin: 5px 5px;
+    cursor: pointer;
+
+}
+
+.signup .account-type button a {
+    padding: 0px 10px;
+    text-decoration: none;
+    color: black;
+}
+
+
+#foot {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    top: 230px;
+    background-color: black;
+    color: white;
+    /* text-align: center; */
+    height: 30px;
+}

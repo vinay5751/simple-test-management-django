@@ -1,0 +1,54 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap');
+
+/* CSS RESET  */
+
+* {
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Noto Sans';
+}
+
+#form {
+    height: 290px;
+}
+
+#form .form-div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 100px 0px;
+}
+
+#form .form-div #form-control {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#form .form-div #form-control #account-type {
+    padding: 5px;
+    width: 285px;
+    margin: 5px;
+}
+
+#form .form-div h2 {
+    padding-bottom: 10px;
+}
+
+#form .form-div #form-control input {
+    width: 270px;
+    padding: 5px;
+    margin: 5px;
+}
+
+#form .form-div #form-control #sign-in {
+    padding: 5px;
+    margin: 5px;
+    width: 285px;
+}
+
+#form .form-div #sign-up {
+    text-decoration: none;
+    color: black;
+
+}

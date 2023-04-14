@@ -1,0 +1,94 @@
+/* imports */
+
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap');
+
+/* CSS RESET  */
+
+* {
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Noto Sans';
+}
+
+/* navbar  */
+#navbar {
+    position: relative;
+    display: flex;
+    align-items: center;
+    background-color: #0000005c;
+}
+
+#navbar #logo {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+#navbar #logo img {
+    height: 3rem;
+    mix-blend-mode: color;
+    /* filter: invert(1); */
+
+}
+
+#navbar #logo h3 {
+    margin-top: -15px;
+    color: white;
+    font-size: 15px;
+}
+
+#navbar #navigation-menu {
+    padding: 0px 20px;
+}
+
+#navbar #navigation-menu ul {
+    display: flex;
+    align-items: center;
+}
+
+#navbar #navigation-menu ul li {
+    list-style: none;
+    margin: 5px;
+}
+
+#navbar #navigation-menu ul li a {
+    color: white;
+    text-decoration: none;
+    padding: 10px;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+#navbar #navigation-menu ul li a:hover{
+    color: black;
+    background-color: white;
+    border-radius: 10px;
+}
+
+#navbar::after {
+    content: "";
+    position: absolute;
+    top: 0px;
+    bottom: 0px;
+    right: 0px;
+    left: 0px;
+    height: 650px;
+    background: center/cover no-repeat url("/static/img/bg.jpg");
+    opacity: 0.7;
+    z-index: -1;
+}
+
+/* footer  */
+
+#foot{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    top: 285px; 
+    background-color: black;
+    color: white;
+    /* text-align: center; */
+    height: 30px;
+}

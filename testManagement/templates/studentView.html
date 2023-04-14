@@ -1,0 +1,17 @@
+{% extends 'base.html' %}
+{% block pageCss %} <link rel="stylesheet" href="/static/style/login.css"> {% endblock pageCss %}
+{% block js %}{% endblock js %}
+{% block title %}Student Login{% endblock title %}
+
+{% block body %}
+<section class="studentView">
+    <h1 style="text-align: center;">Welcome Student {{user.fname}} {{user.lname}}</h1>
+    <h2>Tests Available for Downloads</h2>
+    {% for test in tests %}
+    <li><a href="{{ test.pdf.url }}" target="_blank">{{ test.title }}</a></li>
+    {% endfor %}
+    <a href="/logout">Click Here To Logout</a>
+</section>
+
+{% endblock body %}
+

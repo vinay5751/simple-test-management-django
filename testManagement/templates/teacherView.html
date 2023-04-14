@@ -1,0 +1,27 @@
+{% extends 'base.html' %}
+{% block pageCss %}
+<link rel="stylesheet" href="/static/style/login.css"> {% endblock pageCss %}
+{% block js %}{% endblock js %}
+{% block title %}Teacher Login{% endblock title %}
+
+{% block body %}
+<section class="teacherView">
+    <h2>Welcome {{user.fname}} {{user.lname}}!!!</h2>
+    <h3>Upload Test</h3>
+    <form method="POST" enctype="multipart/form-data" action="/uploadtest">
+        {% csrf_token %}
+        {{ form.as_p }}
+        <button type="submit">Upload Test</button>
+    </form>
+    {% for test in tests %}
+    <li>
+        <a href="{{ test.pdf.url }}" target="_blank">{{ test.title }}</a>
+        <a href="/delete/{{ test.id }}">delete</a>
+    </li>
+
+    {% endfor %}
+
+
+    <a href="/logout">Click Here To Logout</a>
+</section>1
+{% endblock body %}

@@ -1,0 +1,26 @@
+{% extends 'base.html' %}
+
+{% block title %}Student Sign Up{% endblock title %}
+
+{% block pageCss %}<link rel="stylesheet" href="/static/style/signupform.css"> {% endblock pageCss %}
+
+
+{% block body %}
+<section class="form">
+    <form action="/signup/student" method="post">
+        {% csrf_token %}
+        <h2>Student Sign Up</h2>
+        <label for="fname">First Name:</label>
+        <input type="text" name="fname" id="fname">
+        <label for="lname">Last Name:</label>
+        <input type="text" name="lname" id="lname">
+        <label for="standard">Enter Standard:</label>
+        <input type="number" name="standard" id="standard" min="6" max="12">
+        <label for="email">Enter email:</label>
+        <input type="email" name="email" id="email">
+        <label for="password">Enter password:</label>
+        <input type="password" name="password" id="password">
+        <input type="submit" value="Sign Up" id="btn">
+    </form>
+</section>
+{% endblock body %}
